@@ -45,7 +45,7 @@ class Lists extends Component {
         }
         return (
             <div id='lists'>
-                <h3  onDoubleClick={now} className='links'>thoughts</h3>
+               
                 <h3  onDoubleClick={now} className='links'>Barmigardam</h3>
                 <h3  onDoubleClick={now} className='links'>The plan</h3>
                 <h3  onDoubleClick={now} className='links'>Foils</h3>
