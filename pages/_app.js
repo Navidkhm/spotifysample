@@ -1,44 +1,30 @@
-import '../styles/globals.css'
-import ListPresentor from '../presentors/ListPresentor';
-import MediaPresentor from '../presentors/MediaPresentor';
-import React from 'react'; 
-import List from '../components/List' 
-import media from '../components/Media';
+import '../styles/globals.css';
+import '../styles/components.css'
+import Media from '../components/Media.js';
+import React from 'react';
+import Lists from '../components/lists'
+import 'antd/dist/antd.css';
+import Detailshow from '../components/detailshow'
 
 
+// function MyApp({ Component, pageProps }) {
+//   return (
+//   <Component {...pageProps} />)
+// }
 
-class MyApp extends React.Component{
+// export default MyApp;
 
-  constructor(){
-    super();
-    
-  }
-
-  state={
-    myname:'nothing',
-    play:0,
-  }
-
-  exam=()=>{
-    this.setState({
-      play:1
-    })
-  }
-
-  render(){
-    
-    return(
-      <div className='main'>
-        <div className ='list' onClick={this.exam}>
-          <ListPresentor />
-        </div>
-        <div className='mediao'>
-          <MediaPresentor name={this.state.myname} play={this.state.play}/>
-        </div>
-        
-      </div>
-    )
+class _app extends React.Component {
+  render() {
+    const {Component, pageProps} = this.props;
+    return (
+      <>
+        <Lists/>
+        <Detailshow/>
+        <Media/>
+        {/* <Component {...pageProps} /> */}
+      </>
+    );
   }
 }
-
-export default MyApp;
+export default _app;

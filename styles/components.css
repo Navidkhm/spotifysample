@@ -1,0 +1,159 @@
+
+#lists{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+}
+
+.links{
+    cursor: pointer;
+    height: 20px;
+    color: rgb(255 252 252 / 66%);
+    user-select: none;
+}
+.links:hover{
+    color: #FFF
+}
+
+
+#mainmusic{
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    bottom: 0%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons{
+    width:25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:50%;
+    margin-top: -5%;
+}
+
+.btn{
+    width: 25px;
+    height: 25px;
+   
+}
+
+.progresses{
+    width: 95%;
+    display: flex;
+    margin-left: -75px;
+    margin-top: 15px
+   
+}
+
+.progressbar{
+    width: 118%;
+    height: 30px;
+    color: #fff;
+    margin-top: -8px;
+}
+.ant-row{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#songlength{
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+#pr{
+    width: 45px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider{
+    margin-left: 5px;
+}
+
+#currenttime{
+    margin: 0 6px;
+}
+
+#numnum{
+    height: 30px;
+    display: flex;
+}
+
+
+#numnum>div{
+    width: 70px;
+    padding: 0 7px;
+}
+
+#volume{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px;
+}
+
+#detailshow{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-left: -3%;
+}
+
+#songname{
+    width: 60%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#albumname{
+    margin-top: -5px;
+    font-size: 17px;
+}
+
+#artistname{
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+#songpic{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#songpic>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
